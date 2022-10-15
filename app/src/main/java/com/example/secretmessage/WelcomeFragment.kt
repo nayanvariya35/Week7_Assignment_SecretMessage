@@ -18,6 +18,7 @@ class WelcomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_welcome, container, false)
 
         val srtButton = view.findViewById<Button>(R.id.start)
+
         srtButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_welcomeFragment_to_messageFragment)
         }
